@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - [Your Name]</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top portfolio-nav scrolled">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">michael</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="py-5 mt-5 bg-light">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-eyebrow">Contact</span>
+                <h1 class="section-heading">Get In Touch</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- CONTACT FORM -->
+                <div class="col-md-7">
+                    <form id="portfolio-contact-form">
+                        <div class="mb-3">
+                            <label for="contact-name" class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" id="contact-name" required>
+                            <div id="name-error" class="invalid-feedback">Please enter your name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact-email" class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="contact-email" required>
+                            <div id="email-error" class="invalid-feedback">Please enter a valid email.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact-subject" class="form-label">Subject</label>
+                            <select class="form-select" id="contact-subject">
+                                <option selected>Select a subject</option>
+                                <option value="project">Project enquiry</option>
+                                <option value="internship">Internship opportunity</option>
+                                <option value="feedback">Feedback on my portfolio</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact-msg" class="form-label">Message * (min 20 chars)</label>
+                            <textarea class="form-control" id="contact-msg" rows="5" required></textarea>
+                            <div class="invalid-feedback">Message must be at least 20 characters.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div id="contact-success" class="alert alert-success mt-3 d-none">
+                            Thank you! I will reply within 24 hours.
+                        </div>
+                    </form>
+                </div>
+
+                <!-- CONTACT DETAILS -->
+                <div class="col-md-5">
+                    <div class="card p-4">
+                        <h5 class="mb-4">Contact Details</h5>
+                        <div class="mb-3">
+                            <i class="fas fa-envelope text-primary me-2"></i>
+                            <a href="mailto:your@email.com" class="text-decoration-none">sosadjere@gmail.com/a>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fab fa-github text-primary me-2"></i>
+                            <a href="https://github.com/willow-67" class="text-decoration-none"
+                                target="_blank">https://github.com/willow-67</a>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                            <span>UK</span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fab fa-linkedin text-primary me-2"></i>
+                            <a href="https://linkedin.com/in/yourname" class="text-decoration-none"
+                                target="_blank">linkedin.com/in/yourname</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="mb-3">michael</h5>
+                    <p class="text-white">Junior Web Developer. Building clean, responsive websites at Pixel & Tide
+                        Digital Studio, Grade 4.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="mb-3">Pages</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="mb-3">Connect</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white fs-4"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <p class="text-center text-white mb-0">&copy; <span id="footer-year"></span>michael Built at Pixel &
+                Tide Digital.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
